@@ -55,11 +55,13 @@ namespace csharp_calcolatrice
         public static int ValoreAssoluto(int num)
         {
             return Math.Abs(num);
+            // senza il Math.Abs return num < 0 ? -num : num;
         }
 
         public static double ValoreAssoluto(double num)
         {
             return Math.Abs(num);
+            // senza il Math.Abs return num < 0 ? -num : num;
         }
         public static string Minimo(int num, int num2)
         {
@@ -123,6 +125,14 @@ namespace csharp_calcolatrice
         public static double AllaPotenza(int num, int esponente)
         {
             return Math.Pow(num, esponente);
+            // Senza il Math.Pow
+            /* int potenza = num
+             for (int i = 0; i < esponente; i++)
+                {
+                    potenza * num
+                }
+             return potenza;
+             */
         }
     }
 }
